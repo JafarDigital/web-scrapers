@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Форма</title>
+</head>
+<body>
+    <h1>Въведете информация за скрейпинг</h1>
+    <form action="/scrape" method="post">
+        <label for="url">URL на страницата:</label>
+        <input type="text" id="url" name="url" required><br><br>
+
+        <label for="element">HTML елемент (например: h1, p):</label>
+        <input type="text" id="element" name="element" required><br><br>
+
+        <label for="class_name">Клас на елемента (по избор):</label>
+        <input type="text" id="class_name" name="class_name"><br><br>
+
+        <label for="scraper">Изберете скрейпер:</label>
+        <select name="scraper" id="scraper">
+            <option value="beautifulsoup">BeautifulSoup (статичен HTML)</option>
+            <option value="selenium">Selenium (динамични страници)</option>
+            <option value="scrapy">Scrapy (масов скрейпинг)</option>
+        </select><br><br>
+
+        <button type="submit">Изпрати</button>
+    </form>
+</body>
+</html>

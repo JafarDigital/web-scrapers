@@ -1,0 +1,43 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Резултати от скрейпинга</title>
+     <style>
+        body {
+            font-family: "Amiri", "Scheherazade New", "Noto Naskh Arabic", Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+        .content {
+            direction: ltr; /* По подразбиране за английски */
+            text-align: left;
+        }
+        .arabic {
+            direction: rtl;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 Резултати от скрейпинга</h1>
+    <p><strong>Резултат:</strong></p>
+        <pre id="scrapedText" class="content">{{ result }}</pre>
+
+    <br>
+    <a href="/">🔙 Назад</a>
+    
+    <script>
+        // Автоматично настройва езика спрямо съдържанието
+        function detectLanguage() {
+            let textElement = document.getElementById("scrapedText");
+            let text = textElement.innerText.trim();
+            
+            // Проверяваме дали текстът съдържа арабски букви
+            if (/[\u0600-\u06FF]/.test(text)) {
+                textElement.classList.add("arabic");
+                textElement.classList.remove("content");
+            }
+        }
+        detectLanguage();
+    </script>
+</body>
+</html>
