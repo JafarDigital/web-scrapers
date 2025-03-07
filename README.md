@@ -37,4 +37,4 @@ Jinja2 for HTML Templates
 ## • Scrapy - Honorable Mention
 While this project primarily utilizes BeautifulSoup and Selenium, I initially attempted to integrate Scrapy for a more structured, scalable scraping solution. After troubleshooting various issues, I managed to scrape a news website, but Scrapy's asynchronous nature and setup complexity made it less practical for this project’s scope.
 
-For this reason, Scrapy remains available in the form selection as an "honorable mention", though it may not work as expected without additional configuration. Feel free to experiment with it!
+For this reason, Scrapy remains available in the form selection as an "honorable mention", though it may not work as expected without additional configuration in the scapers.py script. Feel free to experiment with it!
