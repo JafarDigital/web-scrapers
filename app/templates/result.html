@@ -1,21 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Резултати от скрейпинга</title>
-     <style>
-        body {
-            font-family: "Amiri", "Scheherazade New", "Noto Naskh Arabic", Arial, sans-serif;
-            font-size: 12px;
-            line-height: 1.6;
-        }
-        .content {
-            direction: ltr; /* По подразбиране за английски */
-            text-align: left;
-        }
-        .arabic {
-            direction: rtl;
-            text-align: right;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
 </head>
 <body>
     <h1>📊 Резултати от скрейпинга</h1>
