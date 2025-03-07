@@ -28,10 +28,10 @@ This project is a **FastAPI-based web scraper** that allows users to extract HTM
 Open http://127.0.0.1:8000
 
 ## • Technologies Used
-Python 3
-FastAPI
-BeautifulSoup
-Selenium
+Python 3, 
+FastAPI, 
+BeautifulSoup, 
+Selenium, 
 Jinja2 for HTML Templates
 
 ## • Scrapy - Honorable Mention
