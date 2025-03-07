@@ -1,16 +1,16 @@
 # Web Scrapers with FastAPI
 
 ## • Overview  
-This project is a **FastAPI-based web scraper** that allows users to extract **specific HTML elements** from websites using:  
+This project is a **FastAPI-based web scraper** that allows users to extract HTML elements from websites using:  
 - **BeautifulSoup**  
 - **Selenium**
-- - **Honourable mention:** attempted web-scraping with Scrapy for the first time  
+- **Honourable mention:** attempted web-scraping with Scrapy for the first time  
 
 ## • Features  
-- Select a scraper (**BeautifulSoup** or **Selenium**; Scrapy is not guaranteed to work)  
+- Web-based interface 
+- Select a scraper (**BeautifulSoup** or **Selenium**; Scrapy not guaranteed to work)  
 - Scrape elements (`div`, `p`, `a`, etc.)  
-- Specify class names to filter results  
-- Web-based interface  
+- Specify class names to filter results - field not required to fill  
 
 ## • Installation  
 
